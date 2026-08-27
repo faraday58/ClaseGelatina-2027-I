@@ -2,4 +2,9 @@
 
 using ClaseGelatina_2027_I;
 
-Gelatina miGelatina = new Gelatina();
+Console.WriteLine("Ingresa el Sabor que deseas de la gelatina");
+string sabor = Console.ReadLine();
+
+
+
+Gelatina miGelatina = new Gelatina( sabor == "" ? "Fresa" : sabor );

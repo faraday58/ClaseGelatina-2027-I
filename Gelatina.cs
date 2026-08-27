@@ -14,12 +14,21 @@ namespace ClaseGelatina_2027_I
             contenido = 40;
             precio = 12.5f;
 
-            Console.WriteLine($"Preparando gelatina de \n sabor: {sabor} \n contenido: {contenido} \n precio: ${precio} ");
+            Console.WriteLine($"Preparando gelatina de \n sabor: {sabor} \n contenido: {contenido} g \n precio: ${precio} ");
             ElevarTemperaturaAgua();
             AgregarGelatinaEnPolvo();
             MezclarIngredientes();
             Templar();
             Refrigerar();
+        }
+
+        internal Gelatina(string sabor)
+        {
+           this.sabor = sabor;
+           contenido = 50;
+           precio = 12.5f;
+           Console.WriteLine($"Preparando gelatina de \n sabor: {sabor} \n contenido: {contenido} g \n precio: ${precio} ");
+
         }
 
 
